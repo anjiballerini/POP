@@ -1,11 +1,12 @@
 POP - custom code for genotyping A. sibirica x A. ecalcarata F2 population
 
-PART I: BASH
+PART I: BASH - from .bam to allele counts
 
 list of scripts run in BASH
 genotype.sh
 counts.F2.sh
 count.alleles.pl
+assign.ancestry.sh
 
 Order of operations to run scripts for assigning genotypes of F2s: sib x ecal
 
@@ -20,7 +21,7 @@ Order of operations to run scripts for assigning genotypes of F2s: sib x ecal
 4. run assign.ancestry.sh to generate read counts for each parent at each informative site 
    for each F2
 
-PART II: R
+PART II: R - from allele counts to a genotype table (in bins) for all F2s
 
 list of scripts run in R
 reads2genotype.step1.R
